@@ -1,0 +1,1852 @@
+<head>
+	<script src="https://unpkg.com/ideogram@1.0.0/dist/js/ideogram.min.js"></script>
+</head>
+<body>
+<h1>Exclude Regions</h1>
+<script>
+	var ideogram = new Ideogram({
+		organism: 'human',
+	annotations: [
+	{
+		name: 'id0',
+		chr: '1',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id1',
+		chr: '1',
+		start: 177417,
+		stop: 227417
+	},
+	{
+		name: 'id2',
+		chr: '1',
+		start: 267719,
+		stop: 317719
+	},
+	{
+		name: 'id3',
+		chr: '1',
+		start: 471368,
+		stop: 521368
+	},
+	{
+		name: 'id4',
+		chr: '1',
+		start: 2634220,
+		stop: 2684220
+	},
+	{
+		name: 'id5',
+		chr: '1',
+		start: 3845268,
+		stop: 3995268
+	},
+	{
+		name: 'id6',
+		chr: '1',
+		start: 13052998,
+		stop: 13102998
+	},
+	{
+		name: 'id7',
+		chr: '1',
+		start: 13219912,
+		stop: 13319912
+	},
+	{
+		name: 'id8',
+		chr: '1',
+		start: 13557162,
+		stop: 13607162
+	},
+	{
+		name: 'id9',
+		chr: '1',
+		start: 17125658,
+		stop: 17175658
+	},
+	{
+		name: 'id10',
+		chr: '1',
+		start: 29878082,
+		stop: 30028082
+	},
+	{
+		name: 'id11',
+		chr: '1',
+		start: 103863906,
+		stop: 103913906
+	},
+	{
+		name: 'id12',
+		chr: '1',
+		start: 120697156,
+		stop: 120747156
+	},
+	{
+		name: 'id13',
+		chr: '1',
+		start: 120936695,
+		stop: 121086695
+	},
+	{
+		name: 'id14',
+		chr: '1',
+		start: 121485434,
+		stop: 142535434
+	},
+	{
+		name: 'id15',
+		chr: '1',
+		start: 142731022,
+		stop: 142781022
+	},
+	{
+		name: 'id16',
+		chr: '1',
+		start: 142967761,
+		stop: 143117761
+	},
+	{
+		name: 'id17',
+		chr: '1',
+		start: 143292816,
+		stop: 143342816
+	},
+	{
+		name: 'id18',
+		chr: '1',
+		start: 143544525,
+		stop: 143644525
+	},
+	{
+		name: 'id19',
+		chr: '1',
+		start: 143771002,
+		stop: 143871002
+	},
+	{
+		name: 'id20',
+		chr: '1',
+		start: 144095783,
+		stop: 144145783
+	},
+	{
+		name: 'id21',
+		chr: '1',
+		start: 144224481,
+		stop: 144274481
+	},
+	{
+		name: 'id22',
+		chr: '1',
+		start: 144401744,
+		stop: 144451744
+	},
+	{
+		name: 'id23',
+		chr: '1',
+		start: 144622413,
+		stop: 144672413
+	},
+	{
+		name: 'id24',
+		chr: '1',
+		start: 144710724,
+		stop: 144810724
+	},
+	{
+		name: 'id25',
+		chr: '1',
+		start: 145833118,
+		stop: 145883118
+	},
+	{
+		name: 'id26',
+		chr: '1',
+		start: 146164650,
+		stop: 146214650
+	},
+	{
+		name: 'id27',
+		chr: '1',
+		start: 146253299,
+		stop: 146303299
+	},
+	{
+		name: 'id28',
+		chr: '1',
+		start: 148026038,
+		stop: 148176038
+	},
+	{
+		name: 'id29',
+		chr: '1',
+		start: 148361358,
+		stop: 148511358
+	},
+	{
+		name: 'id30',
+		chr: '1',
+		start: 148684147,
+		stop: 148734147
+	},
+	{
+		name: 'id31',
+		chr: '1',
+		start: 148954460,
+		stop: 149004460
+	},
+	{
+		name: 'id32',
+		chr: '1',
+		start: 149459645,
+		stop: 149509645
+	},
+	{
+		name: 'id33',
+		chr: '1',
+		start: 205922707,
+		stop: 206072707
+	},
+	{
+		name: 'id34',
+		chr: '1',
+		start: 206332221,
+		stop: 206482221
+	},
+	{
+		name: 'id35',
+		chr: '1',
+		start: 223747846,
+		stop: 223797846
+	},
+	{
+		name: 'id36',
+		chr: '1',
+		start: 235192211,
+		stop: 235242211
+	},
+	{
+		name: 'id37',
+		chr: '1',
+		start: 248908210,
+		stop: 248956422
+	},
+	{
+		name: 'id38',
+		chr: '1',
+		start: 248956422,
+		stop: 248956422
+	},
+	{
+		name: 'id39',
+		chr: '10',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id40',
+		chr: '10',
+		start: 17974675,
+		stop: 18024675
+	},
+	{
+		name: 'id41',
+		chr: '10',
+		start: 38818835,
+		stop: 38868835
+	},
+	{
+		name: 'id42',
+		chr: '10',
+		start: 39154935,
+		stop: 42354935
+	},
+	{
+		name: 'id43',
+		chr: '10',
+		start: 42546687,
+		stop: 42596687
+	},
+	{
+		name: 'id44',
+		chr: '10',
+		start: 46426964,
+		stop: 46476964
+	},
+	{
+		name: 'id45',
+		chr: '10',
+		start: 47429169,
+		stop: 47529169
+	},
+	{
+		name: 'id46',
+		chr: '10',
+		start: 47792476,
+		stop: 47892476
+	},
+	{
+		name: 'id47',
+		chr: '10',
+		start: 48055707,
+		stop: 48105707
+	},
+	{
+		name: 'id48',
+		chr: '10',
+		start: 49095536,
+		stop: 49195536
+	},
+	{
+		name: 'id49',
+		chr: '10',
+		start: 51137410,
+		stop: 51187410
+	},
+	{
+		name: 'id50',
+		chr: '10',
+		start: 51398845,
+		stop: 51448845
+	},
+	{
+		name: 'id51',
+		chr: '10',
+		start: 125869472,
+		stop: 125919472
+	},
+	{
+		name: 'id52',
+		chr: '10',
+		start: 128616069,
+		stop: 128766069
+	},
+	{
+		name: 'id53',
+		chr: '10',
+		start: 133381404,
+		stop: 133431404
+	},
+	{
+		name: 'id54',
+		chr: '10',
+		start: 133677527,
+		stop: 133727527
+	},
+	{
+		name: 'id55',
+		chr: '10',
+		start: 133797422,
+		stop: 133797422
+	},
+	{
+		name: 'id56',
+		chr: '11',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id57',
+		chr: '11',
+		start: 1162759,
+		stop: 1212759
+	},
+	{
+		name: 'id58',
+		chr: '11',
+		start: 50783853,
+		stop: 51090853
+	},
+	{
+		name: 'id59',
+		chr: '11',
+		start: 51594205,
+		stop: 54694205
+	},
+	{
+		name: 'id60',
+		chr: '11',
+		start: 69089801,
+		stop: 69139801
+	},
+	{
+		name: 'id61',
+		chr: '11',
+		start: 69724695,
+		stop: 69774695
+	},
+	{
+		name: 'id62',
+		chr: '11',
+		start: 87688378,
+		stop: 87738378
+	},
+	{
+		name: 'id63',
+		chr: '11',
+		start: 96287584,
+		stop: 96437584
+	},
+	{
+		name: 'id64',
+		chr: '11',
+		start: 134946516,
+		stop: 135006516
+	},
+	{
+		name: 'id65',
+		chr: '12',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id66',
+		chr: '12',
+		start: 95739,
+		stop: 145739
+	},
+	{
+		name: 'id67',
+		chr: '12',
+		start: 7189876,
+		stop: 7239876
+	},
+	{
+		name: 'id68',
+		chr: '12',
+		start: 34856694,
+		stop: 37856694
+	},
+	{
+		name: 'id69',
+		chr: '12',
+		start: 109373470,
+		stop: 109423470
+	},
+	{
+		name: 'id70',
+		chr: '12',
+		start: 121965036,
+		stop: 121965236
+	},
+	{
+		name: 'id71',
+		chr: '12',
+		start: 122530623,
+		stop: 122580623
+	},
+	{
+		name: 'id72',
+		chr: '12',
+		start: 123928080,
+		stop: 123928280
+	},
+	{
+		name: 'id73',
+		chr: '12',
+		start: 123960721,
+		stop: 123960821
+	},
+	{
+		name: 'id74',
+		chr: '12',
+		start: 132706992,
+		stop: 132806992
+	},
+	{
+		name: 'id75',
+		chr: '12',
+		start: 133275309,
+		stop: 133275309
+	},
+	{
+		name: 'id76',
+		chr: '13',
+		start: 1,
+		stop: 19020000
+	},
+	{
+		name: 'id77',
+		chr: '13',
+		start: 86760324,
+		stop: 86910324
+	},
+	{
+		name: 'id78',
+		chr: '13',
+		start: 112353994,
+		stop: 112503994
+	},
+	{
+		name: 'id79',
+		chr: '13',
+		start: 114325993,
+		stop: 114364328
+	},
+	{
+		name: 'id80',
+		chr: '13',
+		start: 114364328,
+		stop: 114364328
+	},
+	{
+		name: 'id81',
+		chr: '13',
+		start: 114364328,
+		stop: 114364328
+	},
+	{
+		name: 'id82',
+		chr: '14',
+		start: 1,
+		stop: 19000000
+	},
+	{
+		name: 'id83',
+		chr: '14',
+		start: 105994256,
+		stop: 107043718
+	},
+	{
+		name: 'id84',
+		chr: '14',
+		start: 107043718,
+		stop: 107043718
+	},
+	{
+		name: 'id85',
+		chr: '15',
+		start: 1,
+		stop: 20000000
+	},
+	{
+		name: 'id86',
+		chr: '15',
+		start: 20894633,
+		stop: 20935075
+	},
+	{
+		name: 'id87',
+		chr: '15',
+		start: 21398819,
+		stop: 21885000
+	},
+	{
+		name: 'id88',
+		chr: '15',
+		start: 22099107,
+		stop: 22797761
+	},
+	{
+		name: 'id89',
+		chr: '15',
+		start: 23514853,
+		stop: 23564853
+	},
+	{
+		name: 'id90',
+		chr: '15',
+		start: 29159443,
+		stop: 29209443
+	},
+	{
+		name: 'id91',
+		chr: '15',
+		start: 82829645,
+		stop: 82879645
+	},
+	{
+		name: 'id92',
+		chr: '15',
+		start: 84984473,
+		stop: 85034473
+	},
+	{
+		name: 'id93',
+		chr: '15',
+		start: 101991189,
+		stop: 101991189
+	},
+	{
+		name: 'id94',
+		chr: '16',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id95',
+		chr: '16',
+		start: 8636921,
+		stop: 8686921
+	},
+	{
+		name: 'id96',
+		chr: '16',
+		start: 32914931,
+		stop: 33208857
+	},
+	{
+		name: 'id97',
+		chr: '16',
+		start: 34023150,
+		stop: 34173150
+	},
+	{
+		name: 'id98',
+		chr: '16',
+		start: 35285801,
+		stop: 46385801
+	},
+	{
+		name: 'id99',
+		chr: '16',
+		start: 88389383,
+		stop: 88439383
+	},
+	{
+		name: 'id100',
+		chr: '16',
+		start: 90294753,
+		stop: 90338345
+	},
+	{
+		name: 'id101',
+		chr: '17',
+		start: 1,
+		stop: 396626
+	},
+	{
+		name: 'id102',
+		chr: '17',
+		start: 21566608,
+		stop: 21666608
+	},
+	{
+		name: 'id103',
+		chr: '17',
+		start: 22263006,
+		stop: 25263006
+	},
+	{
+		name: 'id104',
+		chr: '17',
+		start: 34675848,
+		stop: 34725848
+	},
+	{
+		name: 'id105',
+		chr: '17',
+		start: 62410760,
+		stop: 62460760
+	},
+	{
+		name: 'id106',
+		chr: '17',
+		start: 77546461,
+		stop: 77596461
+	},
+	{
+		name: 'id107',
+		chr: '17',
+		start: 79709049,
+		stop: 79759049
+	},
+	{
+		name: 'id108',
+		chr: '18',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id109',
+		chr: '18',
+		start: 15410898,
+		stop: 18510898
+	},
+	{
+		name: 'id110',
+		chr: '18',
+		start: 52059136,
+		stop: 52209136
+	},
+	{
+		name: 'id111',
+		chr: '18',
+		start: 72283353,
+		stop: 72333353
+	},
+	{
+		name: 'id112',
+		chr: '18',
+		start: 75721820,
+		stop: 75771820
+	},
+	{
+		name: 'id113',
+		chr: '18',
+		start: 78017248,
+		stop: 78077248
+	},
+	{
+		name: 'id114',
+		chr: '19',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id115',
+		chr: '19',
+		start: 7346004,
+		stop: 7396004
+	},
+	{
+		name: 'id116',
+		chr: '19',
+		start: 8687198,
+		stop: 8737198
+	},
+	{
+		name: 'id117',
+		chr: '19',
+		start: 20523415,
+		stop: 20573415
+	},
+	{
+		name: 'id118',
+		chr: '19',
+		start: 24631782,
+		stop: 27731782
+	},
+	{
+		name: 'id119',
+		chr: '19',
+		start: 58617616,
+		stop: 58617616
+	},
+	{
+		name: 'id120',
+		chr: '2',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id121',
+		chr: '2',
+		start: 3529312,
+		stop: 3579312
+	},
+	{
+		name: 'id122',
+		chr: '2',
+		start: 5018788,
+		stop: 5118788
+	},
+	{
+		name: 'id123',
+		chr: '2',
+		start: 16279724,
+		stop: 16329724
+	},
+	{
+		name: 'id124',
+		chr: '2',
+		start: 21153113,
+		stop: 21178113
+	},
+	{
+		name: 'id125',
+		chr: '2',
+		start: 31725939,
+		stop: 31726790
+	},
+	{
+		name: 'id126',
+		chr: '2',
+		start: 33092197,
+		stop: 33093197
+	},
+	{
+		name: 'id127',
+		chr: '2',
+		start: 33141692,
+		stop: 33142692
+	},
+	{
+		name: 'id128',
+		chr: '2',
+		start: 87668206,
+		stop: 87718206
+	},
+	{
+		name: 'id129',
+		chr: '2',
+		start: 89156874,
+		stop: 89830436
+	},
+	{
+		name: 'id130',
+		chr: '2',
+		start: 89890562,
+		stop: 90471176
+	},
+	{
+		name: 'id131',
+		chr: '2',
+		start: 90545103,
+		stop: 91595103
+	},
+	{
+		name: 'id132',
+		chr: '2',
+		start: 92326171,
+		stop: 95326171
+	},
+	{
+		name: 'id133',
+		chr: '2',
+		start: 110109337,
+		stop: 110251337
+	},
+	{
+		name: 'id134',
+		chr: '2',
+		start: 149690582,
+		stop: 149790582
+	},
+	{
+		name: 'id135',
+		chr: '2',
+		start: 234003741,
+		stop: 234053741
+	},
+	{
+		name: 'id136',
+		chr: '2',
+		start: 239801978,
+		stop: 239831978
+	},
+	{
+		name: 'id137',
+		chr: '2',
+		start: 240784132,
+		stop: 240809132
+	},
+	{
+		name: 'id138',
+		chr: '2',
+		start: 242193529,
+		stop: 242193529
+	},
+	{
+		name: 'id139',
+		chr: '2',
+		start: 242193529,
+		stop: 242193529
+	},
+	{
+		name: 'id140',
+		chr: '20',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id141',
+		chr: '20',
+		start: 26319569,
+		stop: 29419569
+	},
+	{
+		name: 'id142',
+		chr: '20',
+		start: 29653908,
+		stop: 29803908
+	},
+	{
+		name: 'id143',
+		chr: '20',
+		start: 34897085,
+		stop: 34947085
+	},
+	{
+		name: 'id144',
+		chr: '20',
+		start: 61091437,
+		stop: 61141437
+	},
+	{
+		name: 'id145',
+		chr: '20',
+		start: 61213369,
+		stop: 61263369
+	},
+	{
+		name: 'id146',
+		chr: '20',
+		start: 62965520,
+		stop: 63025520
+	},
+	{
+		name: 'id147',
+		chr: '21',
+		start: 1,
+		stop: 9411193
+	},
+	{
+		name: 'id148',
+		chr: '21',
+		start: 9595548,
+		stop: 9645548
+	},
+	{
+		name: 'id149',
+		chr: '21',
+		start: 9775437,
+		stop: 9825437
+	},
+	{
+		name: 'id150',
+		chr: '21',
+		start: 10034920,
+		stop: 10084920
+	},
+	{
+		name: 'id151',
+		chr: '21',
+		start: 10215976,
+		stop: 10365976
+	},
+	{
+		name: 'id152',
+		chr: '21',
+		start: 10647896,
+		stop: 10697896
+	},
+	{
+		name: 'id153',
+		chr: '21',
+		start: 11188129,
+		stop: 14338129
+	},
+	{
+		name: 'id154',
+		chr: '21',
+		start: 42955559,
+		stop: 43005559
+	},
+	{
+		name: 'id155',
+		chr: '21',
+		start: 43226828,
+		stop: 43227328
+	},
+	{
+		name: 'id156',
+		chr: '21',
+		start: 43249342,
+		stop: 43250842
+	},
+	{
+		name: 'id157',
+		chr: '21',
+		start: 44632664,
+		stop: 44682664
+	},
+	{
+		name: 'id158',
+		chr: '21',
+		start: 46709983,
+		stop: 46709983
+	},
+	{
+		name: 'id159',
+		chr: '22',
+		start: 1,
+		stop: 16050000
+	},
+	{
+		name: 'id160',
+		chr: '22',
+		start: 16697850,
+		stop: 16847850
+	},
+	{
+		name: 'id161',
+		chr: '22',
+		start: 20509431,
+		stop: 20609431
+	},
+	{
+		name: 'id162',
+		chr: '22',
+		start: 22385572,
+		stop: 23265082
+	},
+	{
+		name: 'id163',
+		chr: '22',
+		start: 50364777,
+		stop: 50414777
+	},
+	{
+		name: 'id164',
+		chr: '22',
+		start: 50818468,
+		stop: 50818468
+	},
+	{
+		name: 'id165',
+		chr: '3',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id166',
+		chr: '3',
+		start: 66170270,
+		stop: 66270270
+	},
+	{
+		name: 'id167',
+		chr: '3',
+		start: 90504854,
+		stop: 93504854
+	},
+	{
+		name: 'id168',
+		chr: '3',
+		start: 194041961,
+		stop: 194047251
+	},
+	{
+		name: 'id169',
+		chr: '3',
+		start: 197962430,
+		stop: 198022430
+	},
+	{
+		name: 'id170',
+		chr: '4',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id171',
+		chr: '4',
+		start: 1423146,
+		stop: 1478646
+	},
+	{
+		name: 'id172',
+		chr: '4',
+		start: 8799203,
+		stop: 8818203
+	},
+	{
+		name: 'id173',
+		chr: '4',
+		start: 9274642,
+		stop: 9324642
+	},
+	{
+		name: 'id174',
+		chr: '4',
+		start: 31820917,
+		stop: 31837417
+	},
+	{
+		name: 'id175',
+		chr: '4',
+		start: 32834638,
+		stop: 32840638
+	},
+	{
+		name: 'id176',
+		chr: '4',
+		start: 40296396,
+		stop: 40297096
+	},
+	{
+		name: 'id177',
+		chr: '4',
+		start: 49338941,
+		stop: 49488941
+	},
+	{
+		name: 'id178',
+		chr: '4',
+		start: 49660117,
+		stop: 52660117
+	},
+	{
+		name: 'id179',
+		chr: '4',
+		start: 59739333,
+		stop: 59789333
+	},
+	{
+		name: 'id180',
+		chr: '4',
+		start: 75427379,
+		stop: 75452279
+	},
+	{
+		name: 'id181',
+		chr: '4',
+		start: 190214555,
+		stop: 190214555
+	},
+	{
+		name: 'id182',
+		chr: '5',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id183',
+		chr: '5',
+		start: 17530657,
+		stop: 17580657
+	},
+	{
+		name: 'id184',
+		chr: '5',
+		start: 46405641,
+		stop: 49405641
+	},
+	{
+		name: 'id185',
+		chr: '5',
+		start: 91636128,
+		stop: 91686128
+	},
+	{
+		name: 'id186',
+		chr: '5',
+		start: 138787073,
+		stop: 138837073
+	},
+	{
+		name: 'id187',
+		chr: '5',
+		start: 155138727,
+		stop: 155188727
+	},
+	{
+		name: 'id188',
+		chr: '5',
+		start: 180905260,
+		stop: 180915260
+	},
+	{
+		name: 'id189',
+		chr: '6',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id190',
+		chr: '6',
+		start: 58087659,
+		stop: 58137659
+	},
+	{
+		name: 'id191',
+		chr: '6',
+		start: 58780166,
+		stop: 61880166
+	},
+	{
+		name: 'id192',
+		chr: '6',
+		start: 62128589,
+		stop: 62178589
+	},
+	{
+		name: 'id193',
+		chr: '6',
+		start: 95680543,
+		stop: 95830543
+	},
+	{
+		name: 'id194',
+		chr: '6',
+		start: 157559467,
+		stop: 157609467
+	},
+	{
+		name: 'id195',
+		chr: '6',
+		start: 157641300,
+		stop: 157691300
+	},
+	{
+		name: 'id196',
+		chr: '6',
+		start: 167942073,
+		stop: 168042073
+	},
+	{
+		name: 'id197',
+		chr: '6',
+		start: 170279972,
+		stop: 170329972
+	},
+	{
+		name: 'id198',
+		chr: '6',
+		start: 170805979,
+		stop: 170805979
+	},
+	{
+		name: 'id199',
+		chr: '7',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id200',
+		chr: '7',
+		start: 232484,
+		stop: 282484
+	},
+	{
+		name: 'id201',
+		chr: '7',
+		start: 50370631,
+		stop: 50410631
+	},
+	{
+		name: 'id202',
+		chr: '7',
+		start: 58054331,
+		stop: 61054331
+	},
+	{
+		name: 'id203',
+		chr: '7',
+		start: 61310513,
+		stop: 61360513
+	},
+	{
+		name: 'id204',
+		chr: '7',
+		start: 61460465,
+		stop: 61510465
+	},
+	{
+		name: 'id205',
+		chr: '7',
+		start: 61677020,
+		stop: 61727020
+	},
+	{
+		name: 'id206',
+		chr: '7',
+		start: 61917157,
+		stop: 61967157
+	},
+	{
+		name: 'id207',
+		chr: '7',
+		start: 74715724,
+		stop: 74765724
+	},
+	{
+		name: 'id208',
+		chr: '7',
+		start: 100556043,
+		stop: 100606043
+	},
+	{
+		name: 'id209',
+		chr: '7',
+		start: 130154523,
+		stop: 130254523
+	},
+	{
+		name: 'id210',
+		chr: '7',
+		start: 139379377,
+		stop: 139404377
+	},
+	{
+		name: 'id211',
+		chr: '7',
+		start: 142048195,
+		stop: 142098195
+	},
+	{
+		name: 'id212',
+		chr: '7',
+		start: 142276197,
+		stop: 142326197
+	},
+	{
+		name: 'id213',
+		chr: '7',
+		start: 143347897,
+		stop: 143397897
+	},
+	{
+		name: 'id214',
+		chr: '7',
+		start: 154270634,
+		stop: 154370634
+	},
+	{
+		name: 'id215',
+		chr: '7',
+		start: 159128663,
+		stop: 159138663
+	},
+	{
+		name: 'id216',
+		chr: '8',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id217',
+		chr: '8',
+		start: 7474649,
+		stop: 7524649
+	},
+	{
+		name: 'id218',
+		chr: '8',
+		start: 12091854,
+		stop: 12141854
+	},
+	{
+		name: 'id219',
+		chr: '8',
+		start: 43838887,
+		stop: 46838887
+	},
+	{
+		name: 'id220',
+		chr: '8',
+		start: 48130499,
+		stop: 48135599
+	},
+	{
+		name: 'id221',
+		chr: '8',
+		start: 86576451,
+		stop: 86726451
+	},
+	{
+		name: 'id222',
+		chr: '8',
+		start: 142766515,
+		stop: 142816515
+	},
+	{
+		name: 'id223',
+		chr: '8',
+		start: 145138636,
+		stop: 145138636
+	},
+	{
+		name: 'id224',
+		chr: '8',
+		start: 145138636,
+		stop: 145138636
+	},
+	{
+		name: 'id225',
+		chr: '9',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id226',
+		chr: '9',
+		start: 39663686,
+		stop: 39713686
+	},
+	{
+		name: 'id227',
+		chr: '9',
+		start: 39974796,
+		stop: 40024796
+	},
+	{
+		name: 'id228',
+		chr: '9',
+		start: 40233029,
+		stop: 40283029
+	},
+	{
+		name: 'id229',
+		chr: '9',
+		start: 40425834,
+		stop: 40475834
+	},
+	{
+		name: 'id230',
+		chr: '9',
+		start: 40940341,
+		stop: 40990341
+	},
+	{
+		name: 'id231',
+		chr: '9',
+		start: 41143214,
+		stop: 41193214
+	},
+	{
+		name: 'id232',
+		chr: '9',
+		start: 41365793,
+		stop: 41415793
+	},
+	{
+		name: 'id233',
+		chr: '9',
+		start: 42613955,
+		stop: 42663955
+	},
+	{
+		name: 'id234',
+		chr: '9',
+		start: 43213698,
+		stop: 43313698
+	},
+	{
+		name: 'id235',
+		chr: '9',
+		start: 43946569,
+		stop: 43996569
+	},
+	{
+		name: 'id236',
+		chr: '9',
+		start: 44676646,
+		stop: 44726646
+	},
+	{
+		name: 'id237',
+		chr: '9',
+		start: 44908293,
+		stop: 44958293
+	},
+	{
+		name: 'id238',
+		chr: '9',
+		start: 45250203,
+		stop: 45350203
+	},
+	{
+		name: 'id239',
+		chr: '9',
+		start: 45815521,
+		stop: 45865521
+	},
+	{
+		name: 'id240',
+		chr: '9',
+		start: 46216430,
+		stop: 46266430
+	},
+	{
+		name: 'id241',
+		chr: '9',
+		start: 46461039,
+		stop: 46561039
+	},
+	{
+		name: 'id242',
+		chr: '9',
+		start: 47060133,
+		stop: 47160133
+	},
+	{
+		name: 'id243',
+		chr: '9',
+		start: 47317679,
+		stop: 65467679
+	},
+	{
+		name: 'id244',
+		chr: '9',
+		start: 65918360,
+		stop: 65968360
+	},
+	{
+		name: 'id245',
+		chr: '9',
+		start: 66192215,
+		stop: 66242215
+	},
+	{
+		name: 'id246',
+		chr: '9',
+		start: 66404656,
+		stop: 66454656
+	},
+	{
+		name: 'id247',
+		chr: '9',
+		start: 66614195,
+		stop: 66664195
+	},
+	{
+		name: 'id248',
+		chr: '9',
+		start: 66863343,
+		stop: 66913343
+	},
+	{
+		name: 'id249',
+		chr: '9',
+		start: 67107834,
+		stop: 67207834
+	},
+	{
+		name: 'id250',
+		chr: '9',
+		start: 67366296,
+		stop: 67516296
+	},
+	{
+		name: 'id251',
+		chr: '9',
+		start: 67987998,
+		stop: 68137998
+	},
+	{
+		name: 'id252',
+		chr: '9',
+		start: 68514181,
+		stop: 68664181
+	},
+	{
+		name: 'id253',
+		chr: '9',
+		start: 68838946,
+		stop: 68988946
+	},
+	{
+		name: 'id254',
+		chr: '9',
+		start: 69278385,
+		stop: 69328385
+	},
+	{
+		name: 'id255',
+		chr: '9',
+		start: 70010542,
+		stop: 70060542
+	},
+	{
+		name: 'id256',
+		chr: '9',
+		start: 70218729,
+		stop: 70318729
+	},
+	{
+		name: 'id257',
+		chr: '9',
+		start: 70506535,
+		stop: 70556535
+	},
+	{
+		name: 'id258',
+		chr: '9',
+		start: 70735468,
+		stop: 70835468
+	},
+	{
+		name: 'id259',
+		chr: '9',
+		start: 92343416,
+		stop: 92443416
+	},
+	{
+		name: 'id260',
+		chr: '9',
+		start: 92528796,
+		stop: 92678796
+	},
+	{
+		name: 'id261',
+		chr: '9',
+		start: 133073060,
+		stop: 133223060
+	},
+	{
+		name: 'id262',
+		chr: '9',
+		start: 137041193,
+		stop: 137091193
+	},
+	{
+		name: 'id263',
+		chr: '9',
+		start: 138394717,
+		stop: 138394717
+	},
+	{
+		name: 'id264',
+		chr: '9',
+		start: 138394717,
+		stop: 138394717
+	},
+	{
+		name: 'id265',
+		chr: 'X',
+		start: 1,
+		stop: 60000
+	},
+	{
+		name: 'id266',
+		chr: 'X',
+		start: 94821,
+		stop: 144821
+	},
+	{
+		name: 'id267',
+		chr: 'X',
+		start: 231384,
+		stop: 281384
+	},
+	{
+		name: 'id268',
+		chr: 'X',
+		start: 1047557,
+		stop: 1097557
+	},
+	{
+		name: 'id269',
+		chr: 'X',
+		start: 1134113,
+		stop: 1184113
+	},
+	{
+		name: 'id270',
+		chr: 'X',
+		start: 1264234,
+		stop: 1314234
+	},
+	{
+		name: 'id271',
+		chr: 'X',
+		start: 2068238,
+		stop: 2118238
+	},
+	{
+		name: 'id272',
+		chr: 'X',
+		start: 7623882,
+		stop: 7673882
+	},
+	{
+		name: 'id273',
+		chr: 'X',
+		start: 10738674,
+		stop: 10788674
+	},
+	{
+		name: 'id274',
+		chr: 'X',
+		start: 37098256,
+		stop: 37148256
+	},
+	{
+		name: 'id275',
+		chr: 'X',
+		start: 49242997,
+		stop: 49292997
+	},
+	{
+		name: 'id276',
+		chr: 'X',
+		start: 49974173,
+		stop: 50024173
+	},
+	{
+		name: 'id277',
+		chr: 'X',
+		start: 52395914,
+		stop: 52445914
+	},
+	{
+		name: 'id278',
+		chr: 'X',
+		start: 58582012,
+		stop: 61682012
+	},
+	{
+		name: 'id279',
+		chr: 'X',
+		start: 76653692,
+		stop: 76703692
+	},
+	{
+		name: 'id280',
+		chr: 'X',
+		start: 113517668,
+		stop: 113567668
+	},
+	{
+		name: 'id281',
+		chr: 'X',
+		start: 115682290,
+		stop: 115732290
+	},
+	{
+		name: 'id282',
+		chr: 'X',
+		start: 120013235,
+		stop: 120063235
+	},
+	{
+		name: 'id283',
+		chr: 'X',
+		start: 143507324,
+		stop: 143557324
+	},
+	{
+		name: 'id284',
+		chr: 'X',
+		start: 148906424,
+		stop: 148956424
+	},
+	{
+		name: 'id285',
+		chr: 'X',
+		start: 149032062,
+		stop: 149082062
+	},
+	{
+		name: 'id286',
+		chr: 'X',
+		start: 152277099,
+		stop: 152327099
+	},
+	{
+		name: 'id287',
+		chr: 'X',
+		start: 155260560,
+		stop: 155270560
+	},
+	{
+		name: 'id288',
+		chr: 'Y',
+		start: 1,
+		stop: 10000
+	},
+	{
+		name: 'id289',
+		chr: 'Y',
+		start: 44821,
+		stop: 94821
+	},
+	{
+		name: 'id290',
+		chr: 'Y',
+		start: 181384,
+		stop: 231384
+	},
+	{
+		name: 'id291',
+		chr: 'Y',
+		start: 997557,
+		stop: 1047557
+	},
+	{
+		name: 'id292',
+		chr: 'Y',
+		start: 1084113,
+		stop: 1134113
+	},
+	{
+		name: 'id293',
+		chr: 'Y',
+		start: 1214234,
+		stop: 1264234
+	},
+	{
+		name: 'id294',
+		chr: 'Y',
+		start: 2018238,
+		stop: 2068238
+	},
+	{
+		name: 'id295',
+		chr: 'Y',
+		start: 8914955,
+		stop: 8964955
+	},
+	{
+		name: 'id296',
+		chr: 'Y',
+		start: 9241322,
+		stop: 9291322
+	},
+	{
+		name: 'id297',
+		chr: 'Y',
+		start: 10104553,
+		stop: 13104553
+	},
+	{
+		name: 'id298',
+		chr: 'Y',
+		start: 13143954,
+		stop: 13193954
+	},
+	{
+		name: 'id299',
+		chr: 'Y',
+		start: 13748578,
+		stop: 13798578
+	},
+	{
+		name: 'id300',
+		chr: 'Y',
+		start: 20143885,
+		stop: 20193885
+	},
+	{
+		name: 'id301',
+		chr: 'Y',
+		start: 22369679,
+		stop: 22419679
+	},
+	{
+		name: 'id302',
+		chr: 'Y',
+		start: 23901428,
+		stop: 23951428
+	},
+	{
+		name: 'id303',
+		chr: 'Y',
+		start: 28819361,
+		stop: 57227415
+	},
+	{
+		name: 'id304',
+		chr: 'Y',
+		start: 57227415,
+		stop: 57227415
+	},
+	{
+		name: 'id305',
+		chr: 'Y',
+		start: 57227415,
+		stop: 57227415
+	}],
+	annotationsLayout: 'overlay',
+	orientation: 'horizontal',
+	chrHeight: 900,
+	resolution: 550,
+	});
+</script>
+</body>
